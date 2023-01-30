@@ -1,0 +1,68 @@
+ID = "st-afa.010_st_resource_mod"
+Name = "ST-AFA - Resource Library"
+Version = 0.1.6
+CompatibleGameVersions = ["0.20.36"]
+ModifiesMultiplayer = true
+Author = "ST-AFA Mod Team"
+Logo = logo.png
+Description = "<blue>STAR TREK - A FINAL ASSAULT</blue>\n\n"\
+			  "Adds new STAR TREK stuff to the game \n\n"\
+              "<red>WARNING: This mod is a WIP and a development mod. Some things might be unbalanced or broken!\n THIS MOD IS REQUIRED FOR MOST OF MY STAR TREK MODS</red> \n\n"\
+			  "- adds new resource: torpedo parts and factory\n"\
+			  "- adds new resource: antimatter (and factory WIP)\n"\
+			  "- adds new resource: dilithium crystals\n"
+StringsFolder = "strings"
+Actions
+[
+	//******************** FUNCTIONS ********************
+
+	//******************** PARTS ********************
+	{
+		Action = AddMany
+		AddTo = "<ships/terran/terran.rules>/terran/parts"
+		ManyToAdd = &<Parts/Parts.rules>/Parts
+	}
+	//******************** SOUNDS ********************
+
+
+	//******************** TECHS ********************
+	{
+		Action = AddMany
+		AddTo = "<modes/career/techs.rules>/Techs"
+		ManyToAdd = &<fed_tech.rules>/Techs
+	}
+
+	//******************** RESOURCES ********************
+	{
+		Action = AddMany
+		AddTo = "<resources/resources.rules>/Resources"
+		ManyToAdd = &<resources/resources.rules>/Resources
+	}
+	{
+		Action = AddMany
+		AddTo = "<doodads/doodads.rules>/Doodads"
+		ManyToAdd = &<doodads/doodads.rules>/Doodads
+	}
+	{
+		Action = AddMany
+		AddTo = "<modes/career/career.rules>/TradeRoutes/StationResourceTradeDeltas"
+		ManyToAdd
+		[
+			{ ResourceType=antimatter;  		DesiredDelta=[-10, 10]; }
+			{ ResourceType=dilithium; 			DesiredDelta=[-10, 10]; }
+			{ ResourceType=torpedo_part;        DesiredDelta=[-25, 25]; }
+		]
+	}
+	{
+		Action = AddMany
+		AddTo = "<modes/career/career.rules>/BaseTradeShip/ResourcesCarried"
+		ManyToAdd
+		[
+			{ ResourceType=antimatter;              RandomWeight=5;  RandomQuantity=[50%, 100%]; }
+			{ ResourceType=dilithium;           	RandomWeight=5;  RandomQuantity=[50%, 100%]; }
+			{ ResourceType=torpedo_part;   			RandomWeight=5;  RandomQuantity=[75%, 100%]; }
+		]
+	}
+	//******************** UI ********************
+
+]
