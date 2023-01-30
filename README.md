@@ -1,4 +1,5 @@
 # Star Trek Resource Mod Library
+![Logo](https://github.com/ST-AFA/Resource_Mod_Library/blob/main/mod/logo.png)
 
 Resource Mod Library requiered for all of our Star Trek Cosmoteer Mods.
 
