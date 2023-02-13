@@ -1,9 +1,9 @@
-ID = "st-afa.010_st_resource_mod"
+ID = nexusmods.010_st_resource_mod
 Name = "ST-AFA - Resource Library"
 Version = 0.1.6
-CompatibleGameVersions = ["0.20.36"]
+CompatibleGameVersions = ["0.21.0"]
 ModifiesMultiplayer = true
-Author = "ST-AFA Mod Team"
+Author = "Panem et Circenses"
 Logo = logo.png
 Description = "<blue>STAR TREK - A FINAL ASSAULT</blue>\n\n"\
 			  "Adds new STAR TREK stuff to the game \n\n"\
