@@ -1,6 +1,6 @@
 ID = nexusmods.010_st_resource_mod
 Name = "ST-AFA - Resource Library"
-Version = 0.1.6
+Version = 0.1.7
 CompatibleGameVersions = ["0.21.0"]
 ModifiesMultiplayer = true
 Author = "Panem et Circenses"

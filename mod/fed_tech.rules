@@ -9,7 +9,7 @@ Techs
 		Icon = &<parts/Factories/factory_antimatter/factory_antimatter.rules>/Part/EditorIcon
 		EditorGroup = &<parts/Factories/factory_antimatter/factory_antimatter.rules>/Part/EditorGroup
 		PartsUnlocked = [&&<parts/Factories/factory_antimatter/factory_antimatter.rules>/Part/ID]
-		Cost = 20000
+		Cost = 80000
 	}
 	{
 		Name = factory_torpedo
